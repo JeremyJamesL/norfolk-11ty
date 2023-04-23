@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'flood';
+    src: local("FloodStdRegular"),
+    url("./assets/fonts/FloodStdRegular.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'palantino';
+    src: local("pala"),
+    url("./assets/fonts/pala.ttf") format("truetype")
+}
+
 *,
 *::after,
 *::before {
@@ -13,15 +25,9 @@
 
 body {
     margin: 0; /* Reset applied default margin */
-    font-family: 'Jost', sans-serif;
+    font-family: 'Pala', sans-serif;
 }
 
-
-@font-face {
-    font-family: 'flood';
-    src: local("FloodStdRegular"),
-    url("./assets/fonts/FloodStdRegular.otf") format("opentype")
-}
 
 .row {
     max-width: 1300px;
@@ -51,7 +57,7 @@ p {
     color: #fff;
     border: 2px solid #fff;
     padding: 21px 34px;
-    font-family: 'Jost', sans-serif;
+    font-family: 'pala', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 14px;
@@ -105,14 +111,12 @@ p {
     background-color: #fff;
     padding: 12px 18px;
     color: rgba(64,64,64,0.8);
-    font-size: 19px;
-    font-family: 'Jost', sans-serif;
+    font-size: 17px;
+    font-family: 'pala', sans-serif;
     display: inline-block;
     line-height: 1;
-    height: 45px;
     border: none;
     letter-spacing: 1px;
-    font-weight: bolder;
     cursor: pointer;
 }
 
@@ -121,7 +125,7 @@ p {
 }
 
 .siteTitle {
-    font-family: 'Noto Serif', serif;
+    font-family: 'pala', serif;
     font-size: 36px;
     color: #fff;
 }
@@ -137,7 +141,6 @@ p {
 }
 
 
-
 .nav li:not(:last-child) {
     margin-right: 20px;
 }
@@ -146,8 +149,8 @@ p {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
-    font-family: 'Jost', sans-serif;
-    font-size: 18px;
+    font-family: 'pala', sans-serif;
+    font-size: 16px;
     letter-spacing: 1px;
 }
 
@@ -159,6 +162,7 @@ p {
     display: none;
     font-size: 50px;
     line-height: 1;
+    font-family: 'Noto';
 }
 
 .mobileMenu {
@@ -269,7 +273,8 @@ p {
 }
 
 .homeTitle {
-    font-family: "flood";
+    font-family: "pala";
+    font-style: italic;
     color: #fff;
     font-size: 65px;
     font-weight: 400;
@@ -308,9 +313,10 @@ p {
     color: #fff;
     padding: 0px 15px;
     font-size: 42px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 500;
-    font-family: "flood";
+    font-family: "pala";
+    font-style: italic;
 }
 
 .main {
@@ -385,7 +391,7 @@ p {
 }
 
 .email {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 /* Gallery */ 
