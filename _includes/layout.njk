@@ -1,0 +1,48 @@
+---
+title: My blog
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Noto+Serif&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+        <div class="siteTitle">
+          <a href="/" >Norfolk Gerringong</a>
+        </div>
+        <ul class="nav">
+          <li>
+            <a href="/about">About the house</a>
+          </li>
+          <li>
+            <a href="/gallery">Gallery</a>
+          </li>
+        </ul>
+        <a href="/availability">
+            <button class="availabilityBtn">
+                Check availability
+            </button>
+          </a>          
+        <div class="mobileMenuToggle">...</div>
+
+        <div class="mobileMenu">
+          <ul class="mobileNav">
+            <li><a href="/about">About the house</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/availability">Check availability</a></li>
+          </ul>
+          <span class="exit">X</span>
+        </div>
+    </header>
+
+    {{content | safe}}
+  <script src="/js/bundle.js"></script>
+  </body>
+</html>
