@@ -1,0 +1,26 @@
+a,
+a:focus,
+a:hover,
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+p {
+    font-size: 18px;
+    color: #00000099;
+    font-weight: 200;
+}
+
+
+:root {
+    --menu-height: 69px;
+}
+
+
+body {
+    margin: 0; /* Reset applied default margin */
+}

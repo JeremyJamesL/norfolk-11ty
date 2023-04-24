@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'flood';
+    src: local("FloodStdRegular"),
+    url("../../assets/fonts/FloodStdRegular.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'palantino';
+    src: local("pala"),
+    url("../../assets/fonts/pala.ttf") format("truetype")
+}
+
+body {
+    font-family: 'pala', sans-serif;
+}
+
+.siteTitle {
+    font-family: 'pala', serif;
+    font-size: 36px;
+    color: #fff;
+}
+
+.title {
+    color: #fff;
+    padding: 0px 15px;
+    font-size: 42px;
+    font-weight: 500;
+    font-family: "pala";
+    font-style: italic;
+}
+
+
+
+.headingSecondary {
+    font-size: 30px;
+    font-weight: 400;
+    color: #404040;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .siteTitle {
+        color: rgba(64,64,64,0.8);
+        font-size: 30px;
+    }
+}

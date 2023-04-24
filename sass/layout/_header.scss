@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px 15px 0px 15px;
+    align-items: center;
+    height: var(--menu-height);
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        background-color: #fff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        align-items: center;
+    }
+}
