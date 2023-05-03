@@ -1,5 +1,4 @@
 const esbuild = require('esbuild');
-const metagen = require('eleventy-plugin-metagen');
 
 module.exports = function(eleventyConfig) {
     // eleventyConfig.setBrowserSyncConfig({
@@ -13,15 +12,10 @@ module.exports = function(eleventyConfig) {
           sourcemap: true,
           outfile: '_site/js/bundle.js'})
     });
-
-    eleventyConfig.setFrontMatterParsingOptions({
-      description: true
-    });
     
     eleventyConfig.addWatchTarget("./js/");
     eleventyConfig.addWatchTarget("./_site/css/");
     eleventyConfig.addPassthroughCopy("assets/img");
     eleventyConfig.addPassthroughCopy("assets/favicon");
     eleventyConfig.addPassthroughCopy("assets/fonts/FloodStdRegular.otf");
-    eleventyConfig.addPlugin(metagen);
   };

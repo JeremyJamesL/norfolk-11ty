@@ -15,7 +15,7 @@ body {
 }
 
 .siteTitle {
-    font-family: 'pala', serif;
+    font-family: $font-headings;
     font-size: 36px;
     color: #fff;
 }
@@ -25,7 +25,7 @@ body {
     padding: 0px 15px;
     font-size: 42px;
     font-weight: 500;
-    font-family: "pala";
+    font-family: $font-headings;
     font-style: italic;
 }
 

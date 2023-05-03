@@ -4,6 +4,12 @@
     gap: 0px;
 }
 
+@media screen and (max-width: 500px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
 .gallery-img {
     max-width: 100%;
     height: auto;

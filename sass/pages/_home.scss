@@ -6,9 +6,9 @@
     width: 100%;
     background-color: rgba(0,0,0,0.2);
     z-index: -1;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    background-position: center center!important;
     box-shadow: inset 0 0 0 50vw rgba(42, 38, 41, 0.5);
     display: flex;
     align-items: center;
@@ -18,11 +18,11 @@
 }
 
 .homeTitle {
-    font-family: "pala";
+    font-family: $font-headings;
     font-style: italic;
     color: #fff;
-    font-size: 65px;
-    font-weight: 400;
+    font-size: 60px;
+    font-weight: 300;
     margin-bottom: 2rem;
 }
 
